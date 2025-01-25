@@ -286,7 +286,7 @@ h6 {
     font-size: 0.875rem;
     line-height: 1.875rem;
     transition: all 0.2s;
-    -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+    
 }
 
 .form-control-select {
@@ -1217,3 +1217,132 @@ a:hover.back-to-top {
     /* end of extra pages */
 }
 /* end of min-width 1200px */
+
+.form-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container .form-control, 
+.form-container .form-select {
+    margin-bottom: 15px;
+}
+
+.form-container .btn {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .form-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* Container for form */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 1.75rem;
+    color: #333;
+}
+
+/* Label styling */
+.form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input & select styling */
+.form-control, .form-select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Textarea styling */
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Radio buttons layout */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex > div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Button styling */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 48%;
+    text-align: center;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+    
+    .d-flex > div {
+        flex: 0 0 48%; /* 2 items per row */
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%; /* Full width buttons */
+    }
+}
+
